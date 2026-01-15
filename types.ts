@@ -1,5 +1,5 @@
 
-export type ToolId = 'dashboard' | 'compressor' | 'upscaler' | 'converter' | 'resizer';
+export type ToolId = 'dashboard' | 'compressor' | 'upscaler' | 'converter' | 'resizer' | 'video' | 'speech';
 
 export interface ToolMetadata {
   id: ToolId;
@@ -7,6 +7,7 @@ export interface ToolMetadata {
   description: string;
   icon: string;
   color: string;
+  badge?: string;
 }
 
 export interface ImageFile {
